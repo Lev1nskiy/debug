@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Main Page
+{% endblock %}
+
+{% block some_text %}
+<h1 style="text-align: center">Это основная страница сайта <br>(да, так уж получилось)</h1>
+<h4>Переход на страничку добавления статьи</h4>
+<a class = "main-button" href="/create-article">Добавить статью</a>
+<a class = "main-button" href="/posts" style="margin-left: 70px">Все статьи</a>
+{% endblock %}

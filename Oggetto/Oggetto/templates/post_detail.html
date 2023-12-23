@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ article.title }}
+{% endblock %}
+
+{% block some_text %}
+<div class = "container mt-5">
+  <h1 style="text-align: center; margin-bottom: 50px">{{ article.title }}</h1>
+  <div class="alert alert-info">
+    <p>{{ article.text }}</p>
+    <p><b>Дата: {{ article.date.date() }}</b></p>
+  </div>
+</div>
+{% endblock %}

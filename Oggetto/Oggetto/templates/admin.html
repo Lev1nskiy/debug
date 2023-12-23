@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+</head>
+<body>
+    <form action="{{ url_for('add_lecture') }}" method="get">
+        <label for="nameOfBroadcast">Name of Broadcast:</label>
+        <input type="text" name="nameOfBroadcast" required><br>
+
+        <label for="linkForBroadcast">Link for Broadcast:</label>
+        <input type="text" name="linkForBroadcast" required><br>
+
+        <label for="lecturerName">Lecturer Name:</label>
+        <input type="text" name="lecturerName" required><br>
+
+        <label for="discipline">Discipline:</label>
+        <input type="text" name="discipline" required><br>
+
+        <label for="time">Time:</label>
+        <input type="text" name="time" required><br>
+
+        <label for="description">Description:</label>
+        <textarea name="description" required></textarea><br>
+
+        <input type="submit" value="Add Lecture">
+    </form>
+</body>
+</html>
